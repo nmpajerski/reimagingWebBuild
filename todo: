@@ -1,0 +1,35 @@
+todo:
+
+gridly:
+specific large cell content
+assign filter tags to divs
+	IDs for specific projects, class for groups
+call current "large"? (how can i print the ones that are currently large or "selected")
+	jquery find "large and make small display:none"
+scroll bar (GUI) changing box sizes?
+	size control, slider element, ID, jquery "onvalue change"
+
+general:
+adjust spacing in header
+difference between "class id" and "div id"
+dropdown button filter
+	javascript, on RECENT, find on Brick > news > display
+search filter
+github setup (collaborative commenting / viewing needs)
+disable side scrolling?
+offline html / css index or cheatsheet
+
+data view:
+source time / weather of rifab locations & viewer location?
+current width / height pixels of browser
+IP, broswer type, etc.
+
+
+focus page:
+allow entire page to load?
+test threejs on focus page
+video embed options
+
+
+Ks ANSWERS
+- based on width of screen "measurement em & percentages"

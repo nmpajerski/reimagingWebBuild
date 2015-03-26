@@ -1,0 +1,507 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+ overflow-x: hidden;
+}
+
+a:link{
+  color:#000;
+  text-decoration: none;
+}
+
+a:visited{
+    color:#000;
+}
+
+
+#header {
+    position: fixed;
+    font-family: Georgia;
+    font-size: 8pt;
+    margin: 40px auto;
+    background: #fff;
+    width: 1000px;
+    z-index: 10;
+    top: 0px;
+}
+
+#header select {
+   border: 2;
+   border-color: #000;
+   background: transparent;
+   font-size: 10px;
+   font-weight: normal;
+   padding: 2px 10px 0px;
+   width: 120px;
+   border-radius: 0;
+   margin-left: 8px;
+   *width: 120px;
+   *background: #58B14C;
+   -webkit-appearance: none;
+}
+
+.header-links{
+  display: inline-block;
+  font-size: inherit;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.header-locations{
+  display: relative;
+  vertical-align: text-bottom;
+  text-align: right;
+  font-size: inherit;
+}
+
+#content {
+    margin:0px auto;
+    width: 1000px;
+    background: #fff;
+}
+
+.cell-image-small{
+  vertical-align: top;
+  background-position: top;
+  background-size: 470px;
+  height: inherit;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.image-description-text{
+  font-family: helvetica, sans-serif;
+  font-size: 8pt;
+  line-height: 10pt;
+  padding-top: 5px;
+}
+
+#project-content {
+    overflow: scroll;
+    width: 600px;
+    background: #fff;
+}
+
+/*Paper & Project formatting*/
+
+.h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 60pt;
+    color: #000;
+}
+
+.project-subtitle{
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+    color: #000;
+}
+
+.text-quote{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: Helvetica, sans-serif;
+  font-size: 24pt;
+  line-height: 30pt;
+  font-weight: bolder;
+  color: red;
+}
+
+.credentials {
+  font-family: Georgia;
+  font-size: 9pt;
+  line-height: 12pt;
+  padding-bottom: 30px;
+}
+
+.project-text {
+  font-family: Georgia;
+  font-size: 12pt;
+  line-height: 16pt;
+}
+
+/*gridly styling*/
+
+.gridly {
+  margin-top: 150px;
+  position: relative;
+  width: 1000px;
+}
+
+.brick {
+  opacity: 1;
+  cursor: pointer;
+  position: relative;
+}
+
+a.delete {
+  display: block;
+  color: #FFF;
+  background: rgba(255,255,255,0.0);
+  width: 25px;
+  height: 25px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 10pt;
+}
+
+
+.gridly .brick.small {
+  width: 150px;
+  height: 150px;
+  background-color: #FFF;
+  background-position: center;
+  vertical-align: center;
+/*  border-right: solid;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 1px;*/
+  font-size: 0pt;
+}
+
+.cell-image-small:hover {
+ background-image: none !important;
+ background-color: #000;
+ color: #FFF;
+}
+
+.gridly .brick.large {
+  width: 470px;
+  height: 470px;
+  background-color: #FFF;
+  margin: -1;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+
+.brick-large-title {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 12pt;
+  padding-top: 10px;
+  line-height: 14pt;
+  overflow: hidden;
+  font-style: bold;
+}
+
+.brick-large-description {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 8pt;
+  padding-top: 25px;
+  line-height: 12pt;
+  overflow: hidden;
+  }
+
+.brick-zoom {
+  padding-top: 2px;
+  padding-left: 10px;
+  position: relative;
+  text-align: left;
+  font-size: 12pt;
+  font-style: bold;
+  color: white;
+
+}
+
+.brick.dragging {
+  opacity:0.8;
+}
+
+/*Page Slide (Focus View) Styles*/
+
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    
+    /* Specify the width of your pageslide here */
+    width: 600px;
+    height: 1000px;
+    margin: 100px;
+    
+    /* These styles are optional, and describe how the pageslide will look */
+    background-color: #FFF;
+    color: #FFF;
+
+/*    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;*/
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
